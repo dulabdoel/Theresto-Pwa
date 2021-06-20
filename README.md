@@ -13,3 +13,22 @@ THE RESTO is an application that display list restaurant
 * **Save your favorit restaurant**. You can save your favorite restaurant with one click.
 * **Add Review**.
 * **Add to homescreen**. With PWA you can add to homescreen in desktop/mobile like a native apps.
+![Screenshot_2021-06-20-23-10-41-391_com android chrome](https://user-images.githubusercontent.com/65041542/122683327-aee99300-d228-11eb-8557-527039e43e26.jpg) ![Screenshot_2021-06-20-23-10-48-618_com android chrome](https://user-images.githubusercontent.com/65041542/122683440-64b4e180-d229-11eb-9b3d-fc9bc8afca60.jpg)
+
+![theresto](https://user-images.githubusercontent.com/65041542/122683490-b1002180-d229-11eb-91bd-58fb176ebd9e.png)
+
+![therestodetail](https://user-images.githubusercontent.com/65041542/122683544-0dfbd780-d22a-11eb-84fa-acea2236f0c8.png)
+
+## Build With
+* [HTML](https://www.w3schools.com/html/default.asp)
+* [CSS](https://www.w3schools.com/css/default.asp)
+* [JS](https://www.w3schools.com/js/default.asp)
+* [Webpack](https://webpack.js.org/)
+* [Workbox](https://developers.google.com/web/tools/workbox)
+* [PWA](https://web.dev/progressive-web-apps/)
+* [IndexedDB](https://developers.google.com/web/ilt/pwa/working-with-indexeddb)
+* [Web Component](https://www.webcomponents.org/)
+
+## Tools
+* [Eslint](https://eslint.org/)
+* [VSC](https://code.visualstudio.com/)
