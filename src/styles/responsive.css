@@ -1,0 +1,309 @@
+@media screen and (min-width:550px) {
+    #hamburger{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:550px) {
+
+.hero-tagline, .hero-title{
+        display: none;
+    }
+.navbar img{
+    width: 100px;
+}
+.to-konten {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+ }
+ .to-konten:focus {
+    top: 0;
+ }
+.nav-list{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.navbar{
+    display: inline-block;
+}
+
+
+     /**Drawer Navigation **/
+#drawer{
+    height: 100%;
+    z-index: 1;
+    transition: 0.5s;
+    width: 300px;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    transform: translate(-300px,0);
+    transform: transform 0.3s ease-in-out;
+    -webkit-transform: translate(-300px,0);
+    visibility: hidden;
+}
+#drawer a{
+    font-family: 'Quicksand', Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.nav-item{
+    position: relative;
+    top: 25%;
+    margin-top: 30px;
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+}
+#drawer.open{
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    visibility: visible;
+}
+#drawel ul{
+    list-style-type: none;
+    padding: 0 16px;
+}
+#drawer li{
+    padding: 5px 0;
+}
+
+#hamburger{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    padding: 8px;
+    height: 44px;
+    width: 44px;
+    display: inline-block;
+}
+}
+/**Responsive CSS **/
+@media screen and (max-width:400px) {
+    .main-konten{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .parallax{
+        min-height: 200px;
+    }
+    .Name-konten{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        
+     }
+     .Kota-konten{
+       font-size: 17px;
+       margin: 8px;
+     }
+     .figure-headline figcaption {
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 12px;
+    }
+    .headline-content h1{
+        font-size: 30px;
+    }
+    .headline-dekor {
+        text-align: center;
+        font-size: 12px;
+    }
+    .post{
+        padding: 8px;
+    }
+}
+@media screen and (min-width:400px){
+    .to-konten {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background-color: #bf1722;
+        color: white;
+        padding: 10px;
+        z-index: 100;
+     }
+     .to-konten:focus {
+        top: 0;
+     }
+    .hero-tagline {
+        display: inline-block;
+        margin-top:240px ;
+        text-decoration: none;
+        color:white;
+        font-weight: bolder;
+        font-size: 45px;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+    }
+    .tagpembuka{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 32px;
+    }
+    
+    .main-konten{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .isi-konten {
+      font-size: 18px;
+    }
+    .post{
+        padding: 16px;
+    }
+    .parallax{
+        min-height: 300px;
+    }
+    .headline-content h1{
+        font-size: 30px;
+    }
+
+    .figure-headline figcaption {
+        font-size: 12px;
+    }
+    .Name-konten{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        
+     }
+     .Kota-konten{
+       font-size: 17px;
+       margin: 8px;
+     }
+    
+}
+@media screen and (min-width:550px) {
+    .to-konten {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background-color: #bf1722;
+        color: white;
+        padding: 10px;
+        z-index: 100;
+     }
+     .to-konten:focus {
+        top: 0;
+     }
+
+    .hero-tagline{
+        font-size: 30px;
+    }
+    .navbar a{
+        font-size: 16px;
+        padding: 1em;
+    }
+    
+}
+@media screen and (min-width:700px) {
+    .to-konten {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background-color: #bf1722;
+        color: white;
+        padding: 10px;
+        z-index: 100;
+     }
+     .to-konten:focus {
+        top: 0;
+     }
+    .hero-tagline {
+        display: inline-block;
+        margin-top:240px ;
+        text-decoration: none;
+        color:white;
+        font-weight: bolder;
+        font-size: 50px;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+    }
+    .tagpembuka{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .navbar a{
+        font-size: 18px;
+    }
+    .parallax{
+        min-height: 350px;
+    }
+    .main-konten{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .isi-konten{
+        font-size: 18px;
+    }
+    .Name-konten{
+        font-size: 22px;
+     }
+     .Kota-konten{
+        font-size: 18px;
+        margin: 8px;
+      }
+}
+@media screen and (min-width:900px) {
+    .to-konten {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background-color: #bf1722;
+        color: white;
+        padding: 10px;
+        z-index: 100;
+     }
+     .to-konten:focus {
+        top: 0;
+     }
+ 
+    .hero-tagline {
+        display: inline-block;
+        margin-top:300px ;
+        text-decoration: none;
+        color:white;
+        font-weight: bolder;
+        font-size: 50px;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+    }
+    .hero-title{
+        font-size: 20px;
+        margin-right: 210px;
+        text-transform: uppercase;
+        color: rgb(228, 228, 228);
+        opacity: 0.7;
+        letter-spacing: 5px;
+    }
+    .parallax{
+        min-height: 450px;
+    }
+    .main-konten{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+    }
+    .isi-konten{
+        font-size: 20px;
+    }
+    .Name-konten{
+        font-size: 24px;
+     }
+}
