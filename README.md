@@ -1,5 +1,5 @@
 # THE RESTO
-Subbmision 2 Dicoding Course [Menjadi Front-End Web Developer Expert](https://www.dicoding.com/academies/219)
+Final Submission Dicoding Course [Menjadi Front-End Web Developer Expert](https://www.dicoding.com/academies/219)
 
 ## Installation and Build
 * **npm install** to install node-modules
