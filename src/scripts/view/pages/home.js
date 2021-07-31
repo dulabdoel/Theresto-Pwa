@@ -8,7 +8,12 @@ const Home = {
     <loader-indicator></loader-indicator>
     <article class="tagpembuka">
         <figure class="figure-headline">
-            <img src="hero-image_1.jpg" alt="BaristaHeadline">
+        <picture>
+        <source media="(max-width: 600px)" srcset="./images/hero-image_1-small.jpg">
+        <img class="lazyload"
+            data-src="./images/hero-image_1-large.jpg" 
+            alt="BaristaHeadline"></img>
+      </picture>
             <figcaption>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, ex.
             </figcaption>
         </figure>
@@ -22,8 +27,7 @@ const Home = {
         </div>
     </article>
     <div class="parallax">
-        <h1 class="parallax-inner__tagline"><span>We Best</span> For You</h1>
-        <p class="parallax-inner__text">Remember Delicious Food,<span>Remember Indonesia Street Food</span><p>
+        <h1 class="parallax-inner__tagline">We Best For You</h1>
     </div>
 </section>
     <div class="content">
@@ -32,7 +36,6 @@ const Home = {
     <p class="content__dashed">Indonesian street food is so delicious, we offer the best for you<p>
     </div>
     <div id="restos" class="restos">
-    <loader-indicator></loader-indicator>
     </div>
     </div>
       `;

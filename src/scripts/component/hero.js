@@ -39,14 +39,8 @@ class heroBar extends HTMLElement {
     width: 100%;
     margin:0;
     text-align: center;
-    background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.441),
-      rgba(0, 0, 0, 0.651)
-    ),
-    url('hero-image_2.jpg');
     background-position: center;
-    background-color: rgb(0, 0, 0);
+    background-color:#fff;
     background-size: cover;
 }
 .hero-tagline {
@@ -59,15 +53,14 @@ class heroBar extends HTMLElement {
     margin-top:100px;
 }
 .hero-tagline span{
-    color:#c1121f;
+    color:#fff;
     font-weight:700;
 }
 .hero-text span{
-    color:#c1121f;
+    color:#fff;
     font-weight:600;
 }
 .hero p{
-    margin-bottom:100px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
@@ -75,12 +68,24 @@ class heroBar extends HTMLElement {
 }
 
 /* REsponsive */
-@media screen and (max-width:400px) {
-    .hero-tagline {
-        font-size: 28px;
+@media screen and (min-width:480px){
+    .hero{
+        background-image: linear-gradient(
+      to top,
+        rgb(0 0 0 / 79%),
+    rgb(160 154 154 / 34%)
+    ),
+    url('images/hero-image_2-large.jpg');
     }
-    .hero p{
-        font-size: 14px;
+}
+@media screen and (max-width:480px){
+    .hero{
+        background-image: linear-gradient(
+      to top,
+        rgb(0 0 0 / 79%),
+    rgb(160 154 154 / 34%)
+    ),
+    url('images/hero-image_2-small.jpg');
     }
 }
 @media screen and (max-width:650px) {

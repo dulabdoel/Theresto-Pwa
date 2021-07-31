@@ -1,18 +1,17 @@
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable no-console */
+import RestaurantIdb from '../../data/restaurant-db';
 import RestaurantSource from '../../data/restaurant-source';
 import UrlParser from '../../routes/url-parser';
-import LikeButtonInitiator from '../../utils/like';
+import LikeButtonInitiator from '../../utils/like-button-presenter';
 import ReviewInitiator from '../../utils/review-initiator';
 import { createRestoDetailTemplate, createReviewList } from '../templates/template-creator';
 
 const Detail = {
   async render() {
     return `
-    <div id="resto" class="restaurant">
+    <div id="resto" class="resto">
     </div>
     <loader-indicator></loader-indicator>
-    <div id="review-content" class="review-content" ></div>
+    <div id="review-content" class="review-content"></div>
     <div class="detail-form">
     <h1 class="add-review-title">Tambahkan review</h1>
     <div id="formReviewContainer" class="detail-form-card"></div>
@@ -27,8 +26,8 @@ const Detail = {
     const loader = document.querySelector('.loader');
     const reviewListContainer = document.querySelector('#review-content');
     try {
-      const restaurant = await RestaurantSource.detailResto(url.id);
-      restoContainer.innerHTML = createRestoDetailTemplate(restaurant);
+      const resto = await RestaurantSource.detailResto(url.id);
+      restoContainer.innerHTML = createRestoDetailTemplate(resto);
       const reviewList = await RestaurantSource.detailResto(url.id);
       reviewListContainer.innerHTML = createReviewList(reviewList);
 
@@ -36,19 +35,20 @@ const Detail = {
 
       await LikeButtonInitiator.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
-        theresto: {
-          id: restaurant.id,
-          name: restaurant.name,
-          city: restaurant.city,
-          rating: restaurant.rating,
-          description: restaurant.description,
-          pictureId: restaurant.pictureId,
+        favoriteRestos: RestaurantIdb,
+        resto: {
+          id: resto.id,
+          name: resto.name,
+          city: resto.city,
+          rating: resto.rating,
+          description: resto.description,
+          pictureId: resto.pictureId,
         },
       });
       // Display Toast
       await ReviewInitiator.init({
         formReviewContainer: document.querySelector('#formReviewContainer'),
-        id: restaurant.id,
+        id: resto.id,
       });
     } catch (error) {
       console.log(error);

@@ -3,7 +3,6 @@ import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer';
 import ToTopInitiator from '../utils/top-init';
 
-/* eslint-disable no-underscore-dangle */
 class App {
   constructor({ button, drawer, content }) {
     this._button = button;

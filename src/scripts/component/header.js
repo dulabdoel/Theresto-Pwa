@@ -77,7 +77,7 @@ class headerBar extends HTMLElement {
   top: 50px;
   left: -180px;
   width: 150px;
-  transition: all 0.3s;
+  transition: all 0.1s;
   padding: 8px;
   background-color: white;
   overflow: hidden;

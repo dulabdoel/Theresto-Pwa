@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 class ToTopElm extends HTMLElement {
   connectedCallback() {
     this._render();
@@ -12,7 +11,7 @@ class ToTopElm extends HTMLElement {
   _render() {
     this.innerHTML = `
                     <div>
-                        <button id="backToTop" aria-label="To Top" aria-hidden="true" class="to-top"><i class="fa fa-arrow-up fa-lg"></i></button>
+                        <button id="backToTop" aria-label="To Top" class="to-top"><i aria-hidden="true" class="fa fa-arrow-up fa-lg"></i></button>
                     </div>
                 `;
     this.querySelector('#backToTop').addEventListener('click', this._eventClick);

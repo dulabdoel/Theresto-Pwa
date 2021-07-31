@@ -1,158 +1,186 @@
-@media screen and (max-width:650px) {
-  .like, .to-top{
+@media screen and (max-width: 650px) {
+  .like {
     bottom: 38px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
-  .content{
+  .to-top {
+    bottom: 38px;
+    width: 50px;
+    height: 50px;
+  }
+  .content {
     padding: 16px;
   }
-  .restaurant .restaurant__title{
+  .resto .resto__name {
     font-size: 30px;
   }
-  .restaurant .restaurant__info h3{
+  .resto .resto__info h3 {
     font-size: 26px;
-
   }
-  .restaurant .restaurant__info h4{
+  .resto .resto__info h4 {
     font-size: 22px;
   }
-  .restaurant .restaurant__poster{
+  .resto .resto__poster {
     margin: auto;
   }
-    .content-border{
-        margin: 0 70px 0 70px;
-      }
-      .content .content__heading{
-          font-size: 22px;
-      }
-      .tagpembuka{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 24px;
-    }
-    .figure-headline figcaption {
-        font-size: 11px;
-    }
-    .headline-content h1{
-        font-size: 32px;
-    }
-    .headline-content p{
-        font-size: 16px;
-    }
-    button[type=submit]{
-      width: 100%;
-    }
-    .detail-form-card{
-      width: 100%;
-    }
-    .iserror{
-      width: 85%;
-      height: 43%;
-      font-size: 70px;
-    }
+  .content-border {
+    margin: 0 70px 0 70px;
+  }
+  .content .content__heading {
+    font-size: 22px;
+  }
+  .tagpembuka {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .figure-headline figcaption {
+    font-size: 11px;
+  }
+  .headline-content h1 {
+    font-size: 32px;
+  }
+  .headline-content p {
+    font-size: 16px;
+  }
+  button[type='submit'] {
+    width: 100%;
+  }
+  .detail-form-card {
+    width: 100%;
+  }
+  .iserror {
+    width: 85%;
+    height: 43%;
+    font-size: 70px;
+  }
 }
-
-@media screen and (max-width:400px) {
-  .back{
-    width:80%;
+@media screen and (min-width: 480px) {
+  .figure-headline img {
+    display: block;
+    margin: auto;
+  }
+  .parallax {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.562)), url('../public/hero-image_4-large.jpg');
+  }
+}
+@media screen and (max-width: 480px) {
+  .resto .resto__poster {
+    width: 100%;
+    height: 220px;
+  }
+  .parallax {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.562)), url('../public/hero-image_4-small.jpg');
+  }
+  .figure-headline img {
+    display: block;
+    margin: auto;
+    width: 480px;
+    height: 320px;
+  }
+  .back {
+    width: 80%;
     font-size: 18px;
   }
-  .iserror{
+  .iserror {
     width: 90%;
     height: 45%;
     font-size: 70px;
   }
-  .iserror span{
+  .iserror span {
     margin-top: 30px;
   }
-  .notfound-tagline{
+  .notfound-tagline {
     font-size: 32px;
   }
-  .restaurant .restaurant__title{
+  .resto .resto__name {
     font-size: 28px;
   }
-  .restaurant .restaurant__info h3{
+  .resto .resto__info h3 {
     font-size: 24px;
-
   }
-  .restaurant .restaurant__info h4{
+  .resto .resto__info h4 {
     font-size: 20px;
   }
-    .content-border{
-        margin: 0 100px 0 100px;
-      }
-  .restos {
-      grid-template-columns: 1fr;
+  .content-border {
+    margin: 0 100px 0 100px;
   }
-  .restaurant{
+  .restos {
+    grid-template-columns: 1fr;
+  }
+  .resto {
     padding: 16px;
   }
-  .content{
+  .content {
     padding: 12px;
   }
-    .content .content__heading{
-        font-size: 18px;
-    }
-    .content-border{
-        margin: 0 50px 0 50px;
-      }
-      .parallax{
-        height:280px;
-    }
-    .tagpembuka{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 12px;
-    }
-    .figure-headline figcaption {
-        font-size: 11px;
-    }
-    .headline-content h1{
-        font-size: 28px;
-    }
-    .headline-content p{
-        font-size: 15px;
-    }
-    error-fav-title{
-     font-size: 28px;
-    }
-    .save i{
-
-      font-size: 80px;
-    }
-    .save p span{
-      font-size: 24px;
-    }
-    .like{
-      width: 55px;
-      height: 55px;
-    }
-    .to-top{
-      width: 48px;
-      height: 48px;
-    }
-    .parallax-inner__tagline{
-      margin-top: 40px;
-      font-size: 32px;
-    }
-    .parallax-inner__text{
-      font-size: 18px;
-      letter-spacing: 2px;
-    }
+  .content .content__heading {
+    font-size: 18px;
+  }
+  .content-border {
+    margin: 0 50px 0 50px;
+  }
+  .parallax {
+    height: 280px;
+  }
+  .tagpembuka {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .figure-headline figcaption {
+    font-size: 11px;
+  }
+  .headline-content h1 {
+    font-size: 28px;
+  }
+  .headline-content p {
+    font-size: 15px;
+  }
+  error-fav-title {
+    font-size: 28px;
+  }
+  .save i {
+    font-size: 80px;
+  }
+  .save p span {
+    font-size: 24px;
+  }
+  .like {
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+  }
+  .to-top {
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  .parallax-inner__tagline {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+  .parallax-inner__text {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
 }
 
 @media screen and (min-width: 650px) {
-  error-favorite{
-    grid-column-start: 1;
-    grid-column-end: 3;
+  .resto .resto__poster {
+    width: 400px;
+    height: 250px;
   }
-
-  .restos .error-fav-title{
+  .figure-headline img {
+    width: 400px;
+    height: 270px;
+  }
+  .restos .error-fav-title {
     grid-column-start: 1 !important;
     grid-column-end: 3 !important;
   }
-  .review-title{
+  .review-title {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -160,106 +188,103 @@
     width: 100%;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
-  .restaurant{
-    grid-template-columns: auto 1fr ;
+  .resto {
+    grid-template-columns: auto 1fr;
   }
-  .restaurant .restaurant__overview{
+  .resto .resto__overview {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .restaurant .restaurant__title{
+  .resto .resto__name {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-.restaurant .restaurant__menu_drinks{
+  .resto .resto__menu_drinks {
     grid-column-start: 2;
-    grid-column-end:3 ;
+    grid-column-end: 3;
   }
-  .restaurant .restaurant__menu_food{
+  .resto .resto__menu_food {
     grid-column-start: 1;
-    grid-column-end:2 ;
+    grid-column-end: 2;
   }
-  .restaurant .restaurant__menu_kategori{
+  .resto .resto__menu_kategori {
     grid-column-start: 1;
-    grid-column-end:3 ;
+    grid-column-end: 3;
   }
-  .restaurant .restaurant__menu_title{
+  .resto .resto__menu_title {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-
-    .content-border{
-        margin: 0 100px 0 100px;
-      }
+  .content-border {
+    margin: 0 100px 0 100px;
+  }
   .restos {
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .figure-headline figcaption {
     font-size: 12px;
-}
-.headline-content h1{
-    font-size: 36px;
-}
-.headline-content p{
-    font-size: 16px;
-}
-.hero-tagline {
-    font-size:38px;
-}
-.tagpembuka{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 32px;
-}
-}
- 
-@media screen and (min-width: 800px) {
-  .review-container{
-    grid-template-columns: repeat(3,1fr);
   }
-    .content-border{
-        margin: 0 120px 0 120px;
-      }
-      .tagpembuka{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-  .headline-content h1{
-      font-size: 40px;
+  .headline-content h1 {
+    font-size: 36px;
+  }
+  .headline-content p {
+    font-size: 16px;
+  }
+  .hero-tagline {
+    font-size: 38px;
+  }
+  .tagpembuka {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .review-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .content-border {
+    margin: 0 120px 0 120px;
+  }
+  .tagpembuka {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .headline-content h1 {
+    font-size: 40px;
   }
   .figure-headline figcaption {
-      font-size:13px;
+    font-size: 13px;
   }
 }
- 
-@media screen and (min-width: 850px) {
 
-  
-    .content-border{
-        margin: 0 150px 0 150px;
-      }
-    .tagpembuka{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
+@media screen and (min-width: 850px) {
+  .content-border {
+    margin: 0 150px 0 150px;
+  }
+  .tagpembuka {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .restos {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
- 
+
 @media screen and (min-width: 1200px) {
   .restos {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
- 
+
 @media screen and (min-width: 1600px) {
   .restos {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -1,6 +1,9 @@
 import 'regenerator-runtime';
 import App from './view/app';
 import swRegister from './utils/sw-register';
+// import lazyload
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 // import styles
 import '../styles/style.css';
 import '../styles/utils.css';
@@ -12,7 +15,6 @@ import './component/hero';
 import './component/to-konten';
 import './component/to-top-element';
 import './component/error-detail';
-import './component/error-favorite';
 import './component/error-home';
 import './utils/loader-init';
 
